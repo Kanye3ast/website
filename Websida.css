@@ -1,0 +1,343 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  background-color: #111;
+}
+
+.profile-image {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 65px;
+  height: auto;
+  z-index: 9999;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.container h2 {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 10px;
+}
+
+.container h4,
+.container p,
+.container a,
+.container label,
+.container input,
+.container textarea,
+.container button {
+  color: white;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+nav ul {
+  margin-top: 0px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+div#comparison { 
+  width: 60vw;
+  height: 60vw;
+  max-width: 600px;
+  max-height: 600px;
+  overflow: hidden; 
+}
+
+div#comparison figure { 
+  background-image: url("Images/bakgrund2.jpg"); 
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.preset-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+  margin-top: 100px; /* Adjust the margin-top value as needed */
+}
+
+.preset-gallery img {
+  width: 2000px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0px; /* Add some margin around the images */
+}
+
+#gallery .photo-grid {
+  position: relative;
+  padding: 20px;
+}
+
+#gallery .photo-item {
+  position: relative;
+  padding: 10px;
+}
+
+#gallery .photo-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.5); /* Adjust the RGBA values and opacity as desired */
+  z-index: -1;
+}
+
+
+#gallery {
+  background-color: transparent;
+  color: #fff;
+  padding: 40px 0;
+}
+
+#gallery .container {
+  text-align: center;
+}
+
+#gallery h2 {
+  margin-bottom: 5px;
+  margin-top: 600px;
+  font-size: 60px; /* Add or adjust the font-size value */
+}
+
+#gallery p {
+  margin-bottom: 10px;
+  margin-top: 2px;
+  font-size: 26px; /* Add or adjust the font-size value */
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+}
+
+<style>
+  #movie {
+    margin-top: 200px;
+    margin-bottom: 0px;
+  }
+
+  .movie-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+
+
+form label,
+form input,
+form textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+form button {
+  padding: 10px;
+  background-color: #111; /* Replace 'red' with your desired color */
+  color: white; /* Set the text color to contrast with the background color */
+}
+
+footer p {
+  margin: 0;
+}
+
+#backgrounds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about {
+  background-color: rgba(17, 17, 17, 0.7); /* Replace the RGBA values and opacity as desired */
+  color: #111; /* Set the text color to contrast with the background color */
+  padding: 40px 0;
+  margin-top: 200px;
+  margin-bottom: 200px;
+ 
+}
+
+#About {
+  background-color: rgba(17, 17, 17, 0.7); /* Replace the RGBA values and opacity as desired */
+  color: white; /* Set the text color to contrast with the background color */
+  padding: 40px;
+  margin: 20% 10%;
+}
+
+#About h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 60px;
+  text-align: center;
+}
+
+#About h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+#About p {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+#About img {
+  max-width: 500px;  /* Limit the image width to the container */
+  width: 
+  margin: 0 auto 20px; /* Center the image horizontally and provide spacing */
+  display: block; /* Ensure proper spacing */
+  
+}
+
+#Contact {
+  margin-top: 50px; /* Change the margin-top value as desired */
+  margin-bottom: 200px; /* Change the margin-bottom value as desired */
+  color: #111;
+}
+
+#Contact input[type="text"],
+#Contact input[type="email"],
+#Contact textarea {
+  color: black;
+}
+
+
+footer {
+  background-color: #111; /* Change the color value as desired */
+  color: #fff; /* Change the text color if needed */
+}
+footer {
+  height: 80px; /* Change the height value as desired */
+  margin-bottom: -60px;
+  margin-top: 100px;
+  margin-left: -1500px;
+  margin-right: -1500px;
+}
+
+
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
+/* Background effect */
+body:before {
+  content: "";
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Images/bakgrund16.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
